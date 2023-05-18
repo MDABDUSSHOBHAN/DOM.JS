@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" class="css">
+    <title>DOM</title>
+</head>
+<body>
+      <header>
+           <h1>Welcome To My DOM</h1>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit possimus, mollitia animi provident eaque cum, accusantium neque optio, aperiam deserunt corporis in fuga dolore sapiente dolores ab placeat non. </p>
+      </header>
+      <main id="main-container">
+        <section>
+            <h1> My osam dom re baba</h1>
+            <ul>
+                 <li>Home</li>
+                 <li>about</li>
+                 <li>service</li>
+                 <li>other</li>
+            </ul>
+
+        </section>
+        <section class="furits-container">
+            <h1 id="furits">Furits I like</h1>
+            <ul id="fcont">
+                <li>Apple</li>
+                <li>Mango</li>
+                <li >Banana</li>
+                <li>Carrot</li>
+            </ul>
+
+           </section>
+
+           <section id="places-container" class="large-text">
+
+            <h1 id="places-title">Places I like To visit</h1>
+            <ul id="places-list">
+                <li>Cox's Bazer</li>
+                <li>Bandaerban</li>
+                <li>Sopnopuri</li>
+              
+            </ul>
+           </section>
+        
+      </main>
+
+
+<!-- Here is JavaScript File.. -->
+
+<script src="./dom.js"></script>
+<script src="./styleinjs.js"></script>
+<script src="./append.js"></script>
+
+<script>
+    const licollection= document.getElementsByTagName('li');
+      console.log(licollection);
+
+      for(const li of licollection){
+        // console.log(li);
+      }
+      const allheading=document.getElementsByTagName('h1');
+      console.log(allheading);
+      for(const h1 of allheading){
+        // console.log(h1);
+      }
+      const vb=document.getElementById('furits');
+      // console.log(vb);
+      const cla=document.getElementsByClassName('important');
+      for(const s of cla){
+
+        // console.log(s);
+      }
+      const sd=document.querySelector('.furits-container');
+      //  console.log(sd);
+    
+      
+      
+    </script>
+
+
+</body>
+</html>
